@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Delicious Bites</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contact-container">
+        <h1>Contact Delicious Bites</h1>
+        
+        <div class="contact-info">
+            <h1>Restaurant Information</h1>
+            <div class="info-item">
+                <strong>Address:</strong> 123 Culinary Street, Food District, Flavor City, FC 12345
+            </div>
+            <div class="info-item">
+                <strong>Phone:</strong> (555) 123-BITE (2483)
+            </div>
+            <div class="info-item">
+                <strong>Email:</strong> reservations@deliciousbites.com
+            </div>
+            <div class="info-item">
+                <strong>Hours:</strong>
+                <br>Monday - Thursday: 11:00 AM - 10:00 PM
+                <br>Friday - Saturday: 11:00 AM - 11:00 PM
+                <br>Sunday: 12:00 PM - 9:00 PM
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h1>Make a Reservation</h1>
+            <form>
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="date">Preferred Date *</label>
+                    <input type="text" id="date" name="date" placeholder="MM/DD/YYYY" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="time">Preferred Time *</label>
+                    <select id="time" name="time" required>
+                        <option value="">Select a time</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="11:30">11:30 AM</option>
+                        <option value="12:00">12:00 PM</option>
+                        <option value="12:30">12:30 PM</option>
+                        <option value="1:00">1:00 PM</option>
+                        <option value="1:30">1:30 PM</option>
+                        <option value="2:00">2:00 PM</option>
+                        <option value="2:30">2:30 PM</option>
+                        <option value="6:00">6:00 PM</option>
+                        <option value="6:30">6:30 PM</option>
+                        <option value="7:00">7:00 PM</option>
+                        <option value="7:30">7:30 PM</option>
+                        <option value="8:00">8:00 PM</option>
+                        <option value="8:30">8:30 PM</option>
+                        <option value="9:00">9:00 PM</option>
+                        <option value="9:30">9:30 PM</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="guests">Number of Guests *</label>
+                    <select id="guests" name="guests" required>
+                        <option value="">Select number of guests</option>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5 Guests</option>
+                        <option value="6">6 Guests</option>
+                        <option value="7">7 Guests</option>
+                        <option value="8">8 Guests</option>
+                        <option value="8+">8+ Guests</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="occasion">Special Occasion</label>
+                    <select id="occasion" name="occasion">
+                        <option value="">None</option>
+                        <option value="birthday">Birthday</option>
+                        <option value="anniversary">Anniversary</option>
+                        <option value="date">Date Night</option>
+                        <option value="business">Business Meeting</option>
+                        <option value="celebration">Celebration</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="requests">Special Requests or Dietary Restrictions</label>
+                    <textarea id="requests" name="requests" placeholder="Please let us know about any allergies, dietary restrictions, or special requests..."></textarea>
+                </div>
+                
+                <button type="submit">Submit Reservation Request</button>
+            </form>
+        </div>
+        
+        <p><a href="index.html">← Back to Menu</a></p>
+    </div>
+</body>
+</html>

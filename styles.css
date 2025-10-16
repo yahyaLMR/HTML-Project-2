@@ -1,0 +1,219 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #faf8f5;
+}
+
+/* Header styles */
+h1 {
+    color: #8B4513;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+section h1 {
+    color: #CD853F;
+    font-size: 2rem;
+    margin: 2rem 0 1rem 0;
+    border-bottom: 3px solid #DEB887;
+    padding-bottom: 0.5rem;
+}
+
+h4 {
+    color: #A0522D;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+/* Container and layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Menu sections */
+section {
+    margin-bottom: 3rem;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* List styles */
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f9f7f4;
+    border-radius: 8px;
+    border-left: 4px solid #DEB887;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Paragraph styles */
+p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    text-align: justify;
+}
+
+/* Link styles */
+a {
+    color: #8B4513;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.8rem 1.5rem;
+    background-color: #FFEFD5;
+    border: 2px solid #DEB887;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: #DEB887;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Contact page specific styles */
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.contact-info {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #8B4513;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #DEB887;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #8B4513;
+    box-shadow: 0 0 5px rgba(139, 69, 19, 0.3);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+button {
+    background-color: #8B4513;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #A0522D;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Contact info styles */
+.info-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #f9f7f4;
+    border-radius: 5px;
+    border-left: 4px solid #DEB887;
+}
+
+.info-item strong {
+    color: #8B4513;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container,
+    .contact-container {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    section h1 {
+        font-size: 1.5rem;
+    }
+    
+    li {
+        padding: 1rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+}
